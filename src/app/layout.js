@@ -8,8 +8,8 @@ import Footer from '../components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'U Call We Clear',
-  description: 'U Call We Clear',
+  title: 'Pilates',
+  description: 'Pilates',
 }
 
 export default function RootLayout({ children }) {

@@ -7,8 +7,6 @@ import axios from 'axios';
 import { fetchImageURL } from '../utils/image';
 import { useGlobalsContext } from '../utils/fetchGlobals';
 import { fetchPageData } from '../utils/fetchPageData';
-import ServiceSwiper from '../components/service-swiper';
-import Faqs from '../components/faqs'
 
 const Homepage = () => {
   const globalsData = useGlobalsContext();
@@ -53,23 +51,16 @@ const Homepage = () => {
         <div className="homepage__banner-overlay"></div>
         <div className="container">
           <div className="homepage__banner-content">
-            <div className="homepage__banner-content-green">
-              {pageData.acf.banner_green_text}
+            <div className="homepage__banner-title">
+              {pageData.acf.banner_title}
             </div>
-            <div className="homepage__banner-content-main">
-              {pageData.acf.banner_main_title}
-            </div>
-            <div className="homepage__banner-content-sub">
-              {pageData.acf.banner_sub_text}
+            <div className="homepage__banner-text">
+              {pageData.acf.banner_text}
             </div>
           </div>
         </div>
       </section>
       <section className="homepage__usps"></section>
-
-      <ServiceSwiper/>
-
-      <Faqs/>
       
     </>
   );
